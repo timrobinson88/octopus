@@ -28,9 +28,20 @@
   text-decoration: none;
 }
 */
+
 body{
   background-color: #04cae8;
   color:white;
+    margin:0;
+  padding: 0;
+}
+
+.header{
+  background-color: black;
+  width: 100%;
+  height: 80px;
+  box-shadow:
+
 }
 
 .container{
@@ -41,7 +52,7 @@ body{
     width:100%;
     border-collapse:collapse;
     border-radius: 10px;
-    box-shadow: 10px 10px 5px #242424;
+    /*box-shadow: 10px 10px 5px #242424;*/
   }
   .components td{
     padding:7px;
