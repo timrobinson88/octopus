@@ -1,5 +1,9 @@
 <div class="container">
   <h1><%= @recipe.name %></h1>
+  <p>Created by: <%= @recipe.created_by || "Unknown Creator" %><br />
+    Source Environment: <%= @recipe.source_environment_name %><br />
+    Environment ID:<%= @recipe.source_environment_id %>
+  </p>
   <ul>
     <% @recipe.components.each do |component| %>
       <li><%= component.project_name %> - version: <%= component.release_version %></li>
