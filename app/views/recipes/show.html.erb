@@ -1,8 +1,13 @@
 <div class="header">
+  <ul class="nav">
+    <li><%= link_to("Octopus Deploy", "https://octopusdeploy.com/") %></li>
+    <li><%= link_to("Create Recipe", new_recipe_path) %></li>
+    <li><%= link_to("Home", root_url) %></li>
+  </ul>
 </div>
 <div class="container">
 
-  <h1><%= @recipe.name %></h1>
+  <h1><%= @recipe.name.capitalize %></h1>
   <p>
   </p>
   <table class="components">
@@ -21,7 +26,7 @@
   <%= f.hidden_field :recipe_id, value: @recipe.id %>
   <%= f.label :component_id, "Add Component" %>
   <%= f.select(:component_id, @components_values.sort) %>
-  <%= f.submit "add" %>
+  <%= f.submit "add", :class => 'add-button' %>
   <% end %></td>
       <td class="heading">Created by: <%= @recipe.created_by || "Unknown Creator" %><br />
     Source Environment: <%= @recipe.source_environment_name %><br />
