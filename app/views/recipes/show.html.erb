@@ -9,4 +9,16 @@
       <li><%= component.project_name %> - version: <%= component.release_version %></li>
     <% end %>
   </ul>
+
+
+  <%= form_for RecipeComponent.new do |f| %>
+  <%= f.hidden_field :recipe_id, value: @recipe.id %>
+  <%= f.label :component_id, "component" %>
+  <%= f.select(:component_id, @components_values) %>
+  <%= f.submit "add" %>
+  <% end %>
+
+
+
+
 </div>

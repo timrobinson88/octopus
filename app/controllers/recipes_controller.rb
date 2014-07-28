@@ -6,6 +6,15 @@ class RecipesController < ApplicationController
 
   def show
     @recipe = Recipe.find(params[:id])
+    @components = Component.all
+
+    @components_values = []
+    @components.each {|component|
+      subhash=[]
+      subhash << "#{component.project_name} - #{component.release_version}"
+      subhash << component.id
+      @components_values << subhash
+      }
   end
 
   def new

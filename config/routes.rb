@@ -6,6 +6,7 @@ Octopus::Application.routes.draw do
 
 
    resources :recipes, only:[:index, :show, :new, :create]
+   resources :recipe_components
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
