@@ -1,33 +1,4 @@
-/*body{
-  background-color: #363535;
-  color: white;
-  font-family: helvetica;
-}
 
-.container{
-  width: 960px;
-  margin: auto;
-
-}
-
-.container h1{
-  text-align: center;
-  color: #F05DDF;
-
-}
-.container ul{
-  list-style-type: none;
-  text-align: center;
-}
-
-.container li{
-  text-decoration: none;
-}
-
-.container a{
-  text-decoration: none;
-}
-*/
 
 body{
   background-color: #f5f3ea;
@@ -82,20 +53,20 @@ a:active {
     width:100%;
     border-collapse:collapse;
     border-radius: 10px;
-    /*box-shadow: 10px 10px 5px #242424;*/
+
   }
   .components td{
     padding:7px;
   }
-  /* provide some minimal visual accomodation for IE8 and below */
+
   .components tr{
     background: #b8d1f3;
   }
-  /*  Define the background color for all the ODD background rows  */
+
   .components tr:nth-child(odd){
     background: #e5e0ce;
   }
-  /*  Define the background color for all the EVEN background rows  */
+
   .components tr:nth-child(even){
     background: #f5f3ea;
   }
