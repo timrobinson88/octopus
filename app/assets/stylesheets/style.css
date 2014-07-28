@@ -31,7 +31,8 @@
 
 body{
   background-color: #f5f3ea;
-  font-family: Helvetica;
+  font-family: 'lato';
+  font-weight: 400;
   color:#323232;
     margin:0;
   padding: 0;
@@ -39,6 +40,9 @@ body{
 
 h1{
   padding-bottom: 5px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 42px;
 }
 
 a {
@@ -98,7 +102,7 @@ a:active {
 
   .components{
     color: #585858;
-    font-family: helvetica;
+    font-family: 'Lato', sans-serif;
   }
 
   .components .heading{
@@ -154,6 +158,52 @@ border:1px solid #8ED058;-webkit-box-shadow: #474747 0px 0px 5px ;-moz-box-shado
 }
 
 .components a:active {
+  color: #323232;
+}
+
+.button{
+  margin-left: 5px;
+  margin-top: 25px;
+  width: 150px;
+}
+
+.newform{
+  width:375px;
+  margin: auto;
+  background-color: #e5e0ce;
+  padding-left: 75px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.new_text_field{
+  width: 300px;
+  height:24px;
+  margin-bottom: 15px;
+  border-radius: 7.5px;
+}
+
+.form_container{
+  width:450px;
+  margin:auto;
+}
+
+.add-button a {
+  color: #323232;
+  text-decoration: none;
+}
+
+.add-button a:visited {
+  color: #323232;
+}
+
+.add-button a:hover {
+  color:#323232;
+}
+
+.add-button a:active {
   color: #323232;
 }
 

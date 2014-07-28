@@ -1,3 +1,4 @@
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 <div class="header">
   <ul class="nav">
     <li><%= link_to("Octopus Deploy", "https://octopusdeploy.com/") %></li>
@@ -5,19 +6,24 @@
     <li><%= link_to("Home", root_url) %></li>
   </ul>
 </div>
-<%= form_for @recipe, url: {action: "create"}, html: {class:"nifty_form"} do |f| %>
-  <%= f.label :name, "Recipe Name" %><br />
-  <%= f.text_field :name %> <br />
+<div class="form_container">
+   <h1>New Recipe</h1>
+  <div class="newform">
+     <%= form_for @recipe, url: {action: "create"}, html: {class:"nifty_form"} do |f| %>
+      <%= f.label :name, "Recipe Name" %><br />
+      <%= f.text_field :name, :class => 'new_text_field' %> <br />
 
-  <%= f.label :created_by, "Creator" %><br />
-  <%= f.text_field :created_by %> <br />
+      <%= f.label :created_by, "Creator" %><br />
+      <%= f.text_field :created_by, :class => 'new_text_field' %> <br />
 
-  <%= f.label :source_environment_name, "Source Environment Name" %><br />
-  <%= f.text_field :source_environment_name %> <br />
+      <%= f.label :source_environment_name, "Source Environment Name" %><br />
+      <%= f.text_field :source_environment_name, :class => 'new_text_field' %> <br />
 
- <%= f.label :source_environment_id, "Source Environment Id" %><br />
-  <%= f.text_field :source_environment_id %> <br />
+     <%= f.label :source_environment_id, "Source Environment Id" %><br />
+      <%= f.text_field :source_environment_id, :class => 'new_text_field' %> <br />
+  </div>
 
+      <%= f.submit "Create Recipe", :class => 'add-button' %>
+    <% end %>
+</div>
 
-  <%= f.submit "Create Recipe" %>
-<% end %>

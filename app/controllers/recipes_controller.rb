@@ -25,10 +25,17 @@ class RecipesController < ApplicationController
     @recipe = Recipe.new(params[:recipe])
 
     if @recipe.save
-      redirect_to recipes_path
+      redirect_to recipe_path(@recipe)
     else
       render :new
     end
   end
+
+  def destroy
+    @recipe = Recipe.find(recipe_id)
+    @recipe.destroy
+  end
+
+
 
 end
