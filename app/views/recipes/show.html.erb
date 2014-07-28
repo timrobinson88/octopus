@@ -1,6 +1,8 @@
-<h1><%= @recipe.name %></h1>
-<ul>
-  <% @recipe.components.each do |component| %>
-    <li><%= component.project_name %> - version: <%= component.release_version %></li>
-  <% end %>
-</ul>
+<div class="container">
+  <h1><%= @recipe.name %></h1>
+  <ul>
+    <% @recipe.components.each do |component| %>
+      <li><%= component.project_name %> - version: <%= component.release_version %></li>
+    <% end %>
+  </ul>
+</div>

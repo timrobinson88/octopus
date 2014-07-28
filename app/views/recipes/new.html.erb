@@ -1,0 +1,16 @@
+<%= form_for @recipe, url: {action: "create"}, html: {class:"nifty_form"} do |f| %>
+  <%= f.label :name, "Recipe Name" %><br />
+  <%= f.text_field :name %> <br />
+
+  <%= f.label :created_by, "Creator" %><br />
+  <%= f.text_field :created_by %> <br />
+
+  <%= f.label :source_environment_name, "Source Environment Name" %><br />
+  <%= f.text_field :source_environment_name %> <br />
+
+ <%= f.label :source_environment_id, "Source Environment Id" %><br />
+  <%= f.text_field :source_environment_id %> <br />
+
+
+  <%= f.submit "Create Recipe" %>
+<% end %>

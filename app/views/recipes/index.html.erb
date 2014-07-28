@@ -1,7 +1,9 @@
-<h1>Current Recipes</h1>
-<ul>
-  <% @recipes.each do |recipe| %>
-  <li><%= link_to recipe.name, recipe_path(recipe) %></li>
-  <% end %>
-</ul>
-<a href="#">Create New Recipe</a>
+<div class="container">
+  <h1>Current Recipes</h1>
+  <ul>
+    <% @recipes.each do |recipe| %>
+    <li><%= link_to recipe.name, recipe_path(recipe) %></li>
+    <% end %>
+  </ul>
+  <a href="/newrecipe">Create New Recipe</a>
+</div>

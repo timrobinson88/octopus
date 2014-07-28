@@ -2,7 +2,10 @@ Octopus::Application.routes.draw do
 
   root to: "recipes#index"
 
-   resources :recipes, only:[:index, :show, :new]
+   get "/newrecipe", to: "recipes#new"
+
+
+   resources :recipes, only:[:index, :show, :new, :create]
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
