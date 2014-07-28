@@ -140,6 +140,24 @@ border:1px solid #8ED058;-webkit-box-shadow: #474747 0px 0px 5px ;-moz-box-shado
  background-image: linear-gradient(to bottom, #95b91a, #8bb41d);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#95b91a, endColorstr=#8bb41d);
 }
 
+.components a {
+  color: #323232;
+  text-decoration: none;
+}
+
+.components a:visited {
+  color: #323232;
+}
+
+.components a:hover {
+  color:#b6e026;
+}
+
+.components a:active {
+  color: #323232;
+}
+
+
 
 
 

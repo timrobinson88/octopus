@@ -7,10 +7,14 @@
 </div>
 <div class="container">
   <h1>Current Recipes</h1>
-  <ul>
+  <table class="components">
     <% @recipes.each do |recipe| %>
-    <li><%= link_to recipe.name, recipe_path(recipe) %></li>
+    <tr>
+      <td><%= link_to recipe.name.capitalize, recipe_path(recipe) %></td>
+      <td><%= recipe.created_by || "Unknown Author" %></td>
+    </tr>
     <% end %>
-  </ul>
-  <a href="/newrecipe">Create New Recipe</a>
+  </table>
+  <button type="button" class="add-button"><a href="/newrecipe">Create New Recipe</a></button>
+
 </div>
